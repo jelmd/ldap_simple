@@ -35,3 +35,4 @@ Makefile.in
 Makefile
 libtool
 stamp-h1
+ldap_simple-*

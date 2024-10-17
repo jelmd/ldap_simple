@@ -65,11 +65,9 @@ fi
 AM_CONDITIONAL(ENABLE_LDAP, test "x$have_ldap" = "xyes")
 AM_CONDITIONAL(ENABLE_LDAP_SASL, test "x$have_ldap_sasl" = "xyes")
 
-# TBD: libnfsidmap-dev (nfsidmap_plugin.h, nfsidmap.h)
-
 dnl Where do the Plugins live
 AC_ARG_WITH(pluginpath, [AS_HELP_STRING([--with-pluginpath=/foo],
-	[Causes the library to look in /foo instead of /usr/lib/libnfsidmap for plugins ])],
+	[Install the plugin in /foo/ instead of /usr/lib/libnfsidmap/. ])],
 	path_plugins=$withval,
 	path_plugins=""
 )

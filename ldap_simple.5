@@ -212,8 +212,15 @@ LDAP_ca_cert = /var/ldap/ca-certs.pem
 LDAP_user_dn = cn=unix,ou=roles,ou=institute,o=university
 LDAP_passwd = your_role_password
 
+# NFSv4_person_objectclass  = NFSv4RemotePerson
+# NFSv4_name_attr = NFSv4Name
+# NFSv4_uid_attr = uidNumber
 NFSv4_person_objectclass  = posixAccount
 NFSv4_name_attr = uid
+
+# NFSv4_group_objectclass = NFSv4RemoteGroup
+# NFSv4_group_attr = NFSv4Name
+# NFSv4_gid_attr = gidNumber
 NFSv4_group_objectclass = posixGroup
 NFSv4_group_attr = cn
 

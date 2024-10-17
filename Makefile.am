@@ -26,7 +26,9 @@ conffile.o xlog.o:
 
 EXTRA_DIST = \
     autogen.sh \
-	$(man5_MANS)
+	$(man5_MANS) \
+	conffile.h nfsidmap_private.h \
+	LICENSE
 
 install-data-hook:
 	@(cd $(DESTDIR)$(pkgplugindir) && $(RM) $(pkgplugin_LTLIBRARIES))
